@@ -40,11 +40,26 @@ header nav ul li {
 }
 
 section {
+    display:flex;
+    flex-direction: column;
     float: right;
     width: 60%;
     box-sizing: border-box;
 }
-
+aside, h2{ 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+    align-content: left;
+    width: 40%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #070463;
+    color: #ffffff;
+    font-size: 36px;
+    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
 a {
     color: #ffffff;
     text-decoration: none;
@@ -54,17 +69,7 @@ p {
     font-size: 16px;
 }
 
-aside { 
-    display:inline-block;
-    padding: 20px;
-    width: 40%;
-    height: 100%;
-    margin: auto;
-    background-color: #070463;
-    color: #ffffff;
-    font-size: 36px;
-    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
-}
+
 /* Styles for the sections of content in the body */
 .about-me {
     position: relative;
@@ -166,6 +171,7 @@ aside {
 @media screen and (max-width: 768px) {
     header nav {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
@@ -176,8 +182,16 @@ aside {
     aside {
         width: 40%;
     }
+    /* .about-me {
+       
+    } */
+    /* Something needs to be added here to make the text not disappear beneath the photo when the screen is less than 500px */
     .deployed-projects {
         display: block;
+    }
+    .contact-me ul {
+        display: flex;
+        flex-direction: column;
     }
 }
 
