@@ -12,7 +12,7 @@ body {
 header {
     padding: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:#046307;
+    background-color:hsl(122, 92%, 20%);
     color: #ffffff;
 }
 
@@ -159,8 +159,25 @@ aside {
     justify-content: space-between;
     align-content: center; 
     font-size: 25px;
+    list-style-type: none;
 }
 
 /* Creates media queries to make the webpage content responsive to screen size */
-/* @media screen and (max-width: ) */
+@media screen and (max-width: 768px) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+/* There's an issue with the nav links bleeding into the margin when screen is 710px and the text wraps around */
+    section {
+        width: 60%; 
+    }
+    aside {
+        width: 40%;
+    }
+    .deployed-projects {
+        display: block;
+    }
+}
 
