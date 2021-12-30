@@ -39,24 +39,31 @@ header nav ul li {
     margin-left: 25px;
 }
 
-section {
-    display:flex;
+main section {
+    display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    flex: 1 0 65%;
     float: right;
-    width: 60%;
-    box-sizing: border-box;
-}
-aside, h2{ 
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex: 1 1 auto;
-    align-content: left;
-    width: 40%;
+    width: 80%;
     height: 100vh;
     padding: 20px;
-    background-color: #070463;
-    color: #ffffff;
+    box-sizing: border-box;
+} 
+
+main aside, h2 { 
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content:center;
+    flex: 1 0 15%;
+    float: left;
+    max-width: 20%;
+    height: 500px;
+    padding: 20px;
+    color: #070463;
+    background-color:#d9dcd6;
     font-size: 36px;
     font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
@@ -74,7 +81,7 @@ p {
 .about-me {
     position: relative;
     padding: 50px;
-    height: 300px;
+    height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #070463;
     color: #ffffff;
@@ -82,7 +89,7 @@ p {
 .deployed-projects {
     position: relative;
     padding: 50px;
-    height: 300px;
+    height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #63045f;
     color: #ffffff;
@@ -93,7 +100,7 @@ p {
 }
 .contact-me {
     padding: 50px;
-    height: 300px;
+    height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #633604;
     color: #ffffff;
@@ -101,10 +108,10 @@ p {
 
 /* Styles the headshot in the "About Me" section */
 .about-me img {
-    max-height: 200px;
-    position: relative;
+    max-height: 300px;
+    position: absolute;
     float: right;
-    margin-bottom: 25px;
+    margin: auto;
 }
 
 /* Styles for the items in the "Deployed Projects" section*/
