@@ -41,77 +41,92 @@ header nav ul li {
 
 main section {
     display: flex;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
-    flex: 1 0 65%;
+    flex: 1 0 80%;
     float: right;
-    width: 80%;
     height: 100vh;
     padding: 20px;
     box-sizing: border-box;
 } 
 
-main aside, h2 { 
+aside, h2 { 
     display:flex;
+    flex-wrap:wrap;
     flex-direction: column;
     justify-content:center;
     align-content:center;
-    flex: 1 0 15%;
+    flex: 1 0 20%;
     float: left;
-    max-width: 20%;
     height: 500px;
-    padding: 20px;
+    padding: 10px;
     color: #070463;
     background-color:#d9dcd6;
     font-size: 36px;
     font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 }
+
+aside {
+    border-right: dashed 5px;
+}
+
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Styles the text underneath the "About Me" header */
 p {
-    font-size: 16px;
+    font-size: 25px;
 }
 
 
 /* Styles for the sections of content in the body */
 .about-me {
     position: relative;
-    padding: 50px;
-    height: 500px;
+    padding: 5px;
+    height: 510px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #070463;
     color: #ffffff;
 }
 .deployed-projects {
     position: relative;
-    padding: 50px;
-    height: 500px;
+    padding: 5px;
+    height: 510px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #63045f;
     color: #ffffff;
+}
+
+.banner { 
     display: grid;
+    position: absolute;
     grid-template-columns: repeat (3, 1fr);
     grid-template-rows: 2;
     gap: 10px; 
 }
 .contact-me {
-    padding: 50px;
-    height: 500px;
+    padding: 5px;
+    height: 510px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #633604;
     color: #ffffff;
 }
 
-/* Styles the headshot in the "About Me" section */
+/* Positions and controls the size of the headshot in the "About Me" section */
 .about-me img {
     max-height: 300px;
     position: absolute;
     float: right;
-    margin: auto;
+    padding: 10px;
+    margin: 95px 25px 105px 25px;
 }
 
 /* Styles for the items in the "Deployed Projects" section*/
@@ -184,10 +199,10 @@ p {
     }
 /* There's an issue with the nav links bleeding into the margin when screen is 710px and the text wraps around */
     section {
-        width: 60%; 
+        width: 80%; 
     }
     aside {
-        width: 40%;
+        width: 20%;
     }
     /* .about-me {
        
