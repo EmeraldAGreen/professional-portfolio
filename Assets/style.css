@@ -100,6 +100,7 @@ p {
 }
 
 .contact-me {
+    position:relative;
     padding: 0px;
     height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -116,26 +117,40 @@ p {
     margin: 95px 25px 105px 25px;
 }
 
-.deployed-projects {
+.card {
     position: relative;
-    padding: 10px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 2;
-    gap: 10px;
+    grid-template-columns: 60% 60% 60%;
+    grid-template-rows: 50% 50%; 
+    gap: 5px;
     max-height: 500px;
+    max-width: 60%;
+    justify-content: start;
+    align-content: center;
+    justify-items: start;
+}
+
+.image { 
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .banner {
     margin: 5px;
     border: solid;
-    position:relative;
+    position:absolute;
+    align-content: center;
+    justify-content: center;
+    max-width: 100%;
 }
 
 /* Styles for the linked images in the "Deployed Projects" section*/
 #first {
     grid-row: 1;
-    grid-column: 1/4;
+    grid-column: 1/3;
     border: solid;
     background-color:#633604;
     margin: 10px;
@@ -200,22 +215,36 @@ p {
         align-items: center;
     }
 /* There's an issue with the nav links bleeding into the margin when screen is 710px and the text wraps around */
-    section {
-        width: 80%; 
+    article {
+        width:100%;
+        display: block;
     }
     aside {
-        width: 20%;
+        width: 100%;
+        display: block;
     }
-    /* .about-me {
-       
-    } */
-    /* Something needs to be added here to make the text not disappear beneath the photo when the screen is less than 500px */
+    
     .deployed-projects {
         display: block;
     }
     .contact-me ul {
-        display: flex;
-        flex-direction: column;
+        display: block;
     }
 }
-
+@media screen and (min-width: 768px) {
+    article {
+        width:100%;
+        display: block;
+    }
+    aside {
+        width: 100%;
+        display: block;
+    }
+    
+    .deployed-projects {
+        display: block;
+    }
+    .contact-me ul {
+        display: block;
+    }
+}
