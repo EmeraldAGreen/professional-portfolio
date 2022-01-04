@@ -78,6 +78,7 @@ a {
 /* Styles the text underneath the "About Me" header */
 p {
     font-size: 25px;
+    display: inline-block;
 }
 
 
@@ -141,10 +142,11 @@ p {
 .banner {
     margin: 5px;
     border: solid;
-    position:absolute;
+    position: absolute;
     align-content: center;
     justify-content: center;
     max-width: 100%;
+    background-color:#633604;
 }
 
 /* Styles for the linked images in the "Deployed Projects" section*/
@@ -228,7 +230,9 @@ p {
         display: block;
     }
     .contact-me ul {
-        display: block;
+        display: inline-block;
+        justify-content: space-evenly;
+        align-content: center;
     }
 }
 @media screen and (min-width: 768px) {
@@ -246,5 +250,6 @@ p {
     }
     .contact-me ul {
         display: block;
+    
     }
 }
