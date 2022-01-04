@@ -1,4 +1,4 @@
-# professionalportfolio
+# professional-portfolio
 ## Description 
 This is homework assignment 2 for the DU Coding Bootcamp. It is our first attempt at creating a site for our professional portfolio and includes a section about me, Emerald, my work, and my contact information. 
 
