@@ -5,7 +5,8 @@ This is homework assignment 2 for the DU Coding Bootcamp. It is our first attemp
 Of course, most of the items in the "Deployed Projects" section are placeholders. The first project is the homework assignment 1, and all of the items link to the deployed application for that assignment. 
 
 ## Screenshot
-
+![alt text](Assets/top of the page.png "upper half of the portfolio webpage")
+![alt text](Assets/bottom of the page.png "lower half of the portfolio webpage")
 
 ## Link to Deployed Application 
 https://emeraldagreen.github.io/professional-portfolio/ 
